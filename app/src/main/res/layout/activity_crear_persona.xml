@@ -22,12 +22,14 @@
         android:layout_width="222dp"
         android:layout_height="165dp"
         android:layout_gravity="center_horizontal"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
         tools:src="@tools:sample/avatars" />
 
     <EditText
         android:id="@+id/txtCedula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
         android:ems="10"
         android:hint="@string/cedula"
         android:inputType="number" />
@@ -36,6 +38,7 @@
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
         android:ems="10"
         android:hint="@string/nombre"
         android:inputType="textPersonName" />
@@ -44,6 +47,7 @@
         android:id="@+id/txtApellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
         android:ems="10"
         android:hint="@string/apellido"
         android:inputType="textPersonName" />
@@ -51,6 +55,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginRight="5sp"
         android:orientation="horizontal">
 
         <Button
@@ -66,6 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="@string/limpiar" />
+            android:hint="@string/limpiar"
+            android:onClick="limpiar" />
     </LinearLayout>
 </LinearLayout>
