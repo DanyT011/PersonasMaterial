@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@android:drawable/ic_menu_delete"
-            fab:fab_label="Eliminar C"
+            fab:fab_label="@string/eliminar"
             fab:fab_size="mini" />
 
     </com.github.clans.fab.FloatingActionMenu>
@@ -54,16 +54,17 @@
 
         <ImageView
             android:id="@+id/imgFotoDetalle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="96sp"
+            android:layout_height="96sp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="20sp"
-            app:srcCompat="@android:drawable/ic_menu_gallery"
-            tools:srcCompat="@tools:sample/avatars" />
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
+            android:onClick="eliminar"
             android:stretchColumns="*">
 
             <TableRow

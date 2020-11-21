@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements AdaptadorPersona.
         bundle = new Bundle();
 
         bundle.putString("id", p.getId());
-        bundle.putString("cedulea", p.getCedula());
+        bundle.putString("cedula", p.getCedula());
         bundle.putString("nombre", p.getNombre());
         bundle.putString("apellido", p.getApellido());
 

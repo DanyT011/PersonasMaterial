@@ -18,6 +18,7 @@
     <string name="limpiar">Limpiar</string>
     <string name="detalles_persona">DETALLE PERSONA</string>
     <string name="persona_guardada">Persona Guardada Exitosamente!!</string>
+    <string name="eliminar">Eliminar</string>
 
 
 </resources>

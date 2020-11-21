@@ -1,7 +1,11 @@
 package com.example.personasmaterial;
 
+import android.media.DrmInitData;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.sql.DatabaseMetaData;
 import java.util.ArrayList;
@@ -9,6 +13,7 @@ import java.util.ArrayList;
 public class Datos {
     private static String db = "Personas";
     private static DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+    private static StorageReference storageReference = FirebaseStorage.getInstance().getReference();
     public static ArrayList<Persona> personas = new ArrayList();
 
     public static String getId(){
@@ -23,4 +28,8 @@ public class Datos {
         personas = personas;
     }
 
+    public static void eliminar(Persona p){
+        databaseReference.child(db).child(p.getId()).setValue(p);
+        storageReference.child(p.getId()).delete();
+    }
 }
