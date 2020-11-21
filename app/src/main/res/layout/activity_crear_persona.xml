@@ -17,7 +17,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgFotoSeleccionada"
         android:layout_width="222dp"
         android:layout_height="165dp"
         android:layout_gravity="center_horizontal"
