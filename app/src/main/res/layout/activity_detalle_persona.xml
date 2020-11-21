@@ -57,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TableLayout
@@ -75,7 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="TextView"
+                    android:hint="@string/cedula"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -97,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="TextView"
+                    android:hint="@string/nombre"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -119,7 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="TextView"
+                    android:hint="@string/apellido"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
